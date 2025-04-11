@@ -39,6 +39,26 @@ int main() {
     } while ( rainha <= 8);  // condição é testada apos a execução do codigo, garantido assim pelo monos 1 execução.
     
 
+
+     // MOVIMENTAÇÂO DO CAVALO - LOOP ANINHADO ( do-while e for)
+
+     printf ("\nCAVALO duas casas para baixo e uma para esquerda.\n");
+
+     int cavalo = 1 ;  // variavel declarada fora da extrutura para ser utilizada no loop externo ( do-while )
+  
+     do {  // loop externo: responsavel pela segunda parte da movimentação do cavalo "Esquerda", será executado apos a conclusão do loop interno
+ 
+         for (int i = 1; i <=2 ; i++)  // loop interno: responsavel pela primeira parte da movimentação do cavalo "baixo". Será executado 2 vezes.
+         {
+             printf("Baixo\n");
+         }    
+          
+         printf("Esquerda\n")  ;
+         cavalo++; // incremento para garantir a finalização do loop.
+         
+     } while ( cavalo <= 1 ); // condição para execução do loop externo
+    
+
     return 0;
 
 }
